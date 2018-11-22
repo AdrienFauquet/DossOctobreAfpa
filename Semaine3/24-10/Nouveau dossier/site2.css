@@ -1,0 +1,107 @@
+
+body{
+    background-color:darkslategray;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+nav{
+    border:purple solid 2px; 
+}
+nav>ul{
+    margin: 0;padding: 0;
+   /* border:red solid 1px;*/
+    list-style-type: none;
+}
+nav>ul>li{
+    float:left;
+    width:25%;
+    background-color:orange;
+    text-align: center;
+    border:black solid 1px;
+    box-sizing: border-box;
+}
+nav>ul>li:hover{
+    background-color:rgb(245, 177, 50);
+    transform:scale(1.1);
+}
+/*Ici, nous sommes confrontés à un problème en CSS. En effet, vous devez 
+savoir que lorsqu’un élément parent non flottant possède des éléments
+ enfants flottants, le CSS va faire collapser le parent qui va alors
+  avoir une hauteur égale à zéro pixel.
+
+Le meilleur moyen de remédier à cela est d’appliquer un overflow:hidden
+ à l’élément parent.
+
+Seulement, nous n’allons pas pouvoir procéder comme cela ici car cela 
+cacherait par la suite nos sous-onglets.
+
+Nous allons donc devoir ruser un petit peu en utilisant le pseudo
+ élément CSS::after et les propriétés content, display et clear*/
+nav>ul::after{
+    content: "";
+    display:block;
+    clear:both;
+}
+nav>ul>li>ul{
+    margin:0;
+    padding:0px;
+    width:100%;
+    list-style-type: none;
+    text-align:center;
+   /* border: yellow solid 1px; */
+    display:none;
+    position: absolute;
+}
+nav>ul>li:hover ul{
+    display:block;
+}
+nav>ul>li>ul>li{
+    padding: 20px;
+    background-color:rgb(250, 250, 210);
+    opacity: 0.7;
+    border-bottom:black solid 1px;
+}
+header{
+    margin: 0;
+    background-color:lightblue;
+}
+/*sans cet ajout, le header ne se colle pas au haut de la page*/
+header h1{
+    padding: 0;margin: 0;
+    height:75px;
+    line-height: 75px;
+}
+footer{
+    background-color:mediumaquamarine;
+    text-align:right;
+    padding:30px 0px;
+}
+#poisson{
+    width:75px;
+    position:absolute;
+    top:1px;
+    right:20px;
+    transition-duration: 2s;
+}
+#poisson:hover{
+    transform: translate(-900px)
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+section>div{
+    width:33%;
+}
+.pointer>div{
+    margin-right:50px;
+    padding:20px 10px;
+    border:grey solid 1px;
+}
+.premier{
+    margin-left:10px;
+}

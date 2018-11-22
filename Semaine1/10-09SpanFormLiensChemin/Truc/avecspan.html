@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Span span span</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="spancss.css">
+</head>
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Information personnelles à renseigner</legend>
+        Nom<input class="rouge" type="text" name="nom" title="Entrer votre nom ici"><br>
+        Prénom<input type="text" name="pre"><br>
+        Sexe :
+        Homme<input type="radio" name="genre">
+        Femme<input type="radio" name="genre">
+        Autre<input type="radio" name="genre"><br>
+        Mot de passe <input type="password" name="mdp" title="entrez votre mot de passe"><br>
+        Email<input type="email" required name="mail"><br>
+        <select name="zodiac"> <!--Introduction de la liste défilante-->
+            <option value="poisson">Poisson</option>
+            <option value="taureau">Taureau</option>
+            <option value="balance">Balance</option>
+            <option value="autre">Autre</option>
+        </select>
+        <select name="zodiac" size="4" multiple> <!--Introduction de la liste déja défillée-->
+                <option value="poisson">Poisson</option>
+                <option value="taureau">Taureau</option>
+                <option value="balance">Balance</option>
+                <option value="autre">Autre</option>
+        </select><br>
+        <input id="submit" type="submit" value="envoyer">
+        <input id="reset" type="reset" value="effacer"><br>
+        <!--Insertion du champ de saisie -->
+        <textarea id="gif" name="message" rows="30" cols="60"><input list="browsers" name="browsers">
+        <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+        </datalist>
+<input type="submit"></textarea>
+
+    </fieldset>
+    </form>
+    
+    <p>Lorem ipsum dolor sit amet <span class="oui">consectetur</span> adipisicing elit. Suscipit ear<span class="hid">caché</span>um aperiam illum possimus ab corporis odio quae 
+        quibusdam molestiae dolorum omnis soluta accusantium, at, necessitatibus fugit blanditiis ullam magni tempore!</p>
+    <p>Lorem ipsum dolor sit amet <span class="oui">consectetur</span> adipisicing elit. Suscipit ear<span class="hid">caché</span>um aperiam illum possimus ab corporis odio quae 
+                quibusdam molestiae dolorum omnis soluta accusantium, at, necessitatibus fugit blanditiis ullam magni tempore!</p>
+    <p>Lorem ipsum dolor sit amet <span class="oui">consectetur</span> adipisicing elit. Suscipit ear<span class="hid">caché</span>um aperiam illum possimus ab corporis odio quae 
+                        quibusdam molestiae dolorum omnis soluta accusantium, at, necessitatibus fugit blanditiis ullam magni tempore!</p>
+    <p>Lorem ipsum dolor sit amet <span class="oui">consectetur</span> adipisicing elit. Suscipit ear<span class="hid">caché</span>um aperiam illum possimus ab corporis odio quae 
+  quibusdam molestiae dolorum omnis soluta accusantium, at, necessitatibus fugit blanditiis ullam magni tempore!</p>
+  <p>Lorem ipsum dolor sit amet consectetur. Eius, vitae sed repellendus hic nulla modi deleniti saepe accusamus doloribus, ducimus
+       sit dolore. Et aut iure laudantium cupiditate inventore omnis repellendus!</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, vitae sed repellendus hic nulla modi deleniti saepe accusamus doloribus, ducimus
+            sit dolore. Et aut iure laudantium cupiditate inventore omnis repellendus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, vitae sed repellendus hic nulla modi deleniti saepe accusamus doloribus, ducimus
+                    sit dolore. Et aut iure laudantium cupiditate inventore omnis repellendus!</p>
+    <table>
+        <tr>
+            <td id="tl">Mot</td>
+            <td>mot2</td>
+            <td>mot3</td>
+            <td id="tr">mot4</td>
+        </tr>
+        <tr>
+            <td id="bl">5</td>
+            <td>6</td>
+            <td>7</td>
+            <td id="br">8</td>
+        </tr>
+    </table>
+
+</body>
+</html>

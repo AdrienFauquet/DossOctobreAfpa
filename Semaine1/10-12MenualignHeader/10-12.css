@@ -1,0 +1,56 @@
+html, *{
+    margin:0;
+    padding:0;
+    overflow:auto;
+    text-decoration: none;
+}
+body{
+    background: rgb(250, 215, 215);
+
+}
+header{
+    background: rgb(128, 141, 148);
+    background-image: url(../imagesOctobre/goutte.jpg);
+    background-size:50px;
+    color:white;
+}
+#fondcase{
+    text-align: center;
+    margin-top:100px;
+    background-color:rgb(75, 9, 9);
+}
+.case{
+    display:inline-block;
+    background: rgb(75, 9, 9);
+    text-align:center;
+    padding:20px;
+    width:20%;
+}
+section{
+    margin:10px;
+    text-align: right;
+    width:50%;
+    border:red solid 1px;
+    float:left;
+}
+aside{
+    border:black solid 1px;
+    margin-top:10px;
+    /*C'EST ICI QU'INTERVIENT LA POSITION POUR LES DEUX BLOCS*/
+    width:auto;
+    text-align:center;
+}
+
+footer{
+    background-color:rgb(147, 147, 207);
+    padding:50px;
+    padding-left:0px;
+    border:black solid 5px;
+}
+
+.case:hover{
+    background-color:rgb(90, 14, 14);
+}
+a:visited{
+    color:white;
+}

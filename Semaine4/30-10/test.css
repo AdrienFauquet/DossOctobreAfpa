@@ -1,0 +1,21 @@
+div{
+    text-align:center;
+    background-color: black;
+}
+.left{
+    animation: gauche 2s infinite reverse cubic-bezier(.72,.01,1,.59);
+}
+.right{
+    animation: droite 2s infinite reverse cubic-bezier(.72,.01,1,.59);
+    animation-delay: 1s;
+}
+@keyframes gauche{
+    0%{transform: rotate(30deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(30deg);}
+}
+@keyframes droite{
+    0%{transform: rotate(-30deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(-30deg);}
+}

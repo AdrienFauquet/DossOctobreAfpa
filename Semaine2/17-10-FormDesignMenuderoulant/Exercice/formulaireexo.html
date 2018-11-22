@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!-- FORMULAIRE NUMERO 1-->
+    <div class="englobement"><div class="vert vertun"><form class="formun" method="get">
+        <fieldset>
+            <legend>Identité</legend>
+            <div class="div">NOM:</div><input type="text" name="nom"><br>
+            <div class="div">PRENOM<input type="text" name="prenom"><br>
+            <div class="div">Email</div><input type="text" name="mail"><br>
+        </fieldset>
+    </form></div>
+    <div class="vert vert2"><form class="formdeux" method="adresse">
+        <fieldset>
+            <legend>Adresse</legend>
+            <div class="div"><label for="rue">Rue:</label></div><input type="text" name="rue"><br>
+            <div class="div"><label for="numero">N°:</label></div><input type="text" name="numero"><br>
+            <div class="div"><label for="ville">Ville:</label></div><input type="text" name="ville"><br>
+            <div class="div"><label for="postal">Code Postal:</label></div><input type="text" name="postal"><br>
+        </fieldset>
+    </form></div></div>
+
+    <!-- FORMULAIRE NUMERO 3-->
+
+    <div class="vert vert3"><form class="formtrois" method="competences">
+        <fieldset>
+            <legend>Compétences</legend>
+            <div class="divdeux"><label for="html">HTML:</label></div><input class="checkbox" type="checkbox" name="html">
+            <select name="niveau">
+                <option value="excellent">Excellent</option>
+                <option value="bon">Bon</option>
+                <option value="moyen">Moyen</option>
+                <option value="notions">Notions</option>
+            </select><br>
+            <div class="divdeux"><label for="css">CSS:</label></div><input class="checkbox" type="checkbox" name="css">
+            <select name="niveau">
+                <option value="excellent">Excellent</option>
+                <option value="bon">Bon</option>
+                <option value="moyen">Moyen</option>
+                <option value="notions">Notions</option>
+            </select><br>
+            <div class="divdeux"><label for="javascript">JavaScript:</label></div><input class="checkbox" type="checkbox"
+                name="javascript">
+            <select name="niveau">
+                <option value="excellent">Excellent</option>
+                <option value="bon">Bon</option>
+                <option value="moyen">Moyen</option>
+                <option value="notions">Notions</option>
+            </select><br>
+            <div class="divdeux"><label for="java">Java:</label></div><input class="checkbox" type="checkbox" name="java">
+            <select name="niveau">
+                <option value="excellent">Excellent</option>
+                <option value="bon">Bon</option>
+                <option value="moyen">Moyen</option>
+                <option value="notions">Notions</option>
+            </select><br>
+            <div class="divdeux"><label for="php">PHP:</label></div><input class="checkbox" type="checkbox" name="php">
+            <select name="niveau">
+                <option value="excellent">Excellent</option>
+                <option value="bon">Bon</option>
+                <option value="moyen">Moyen</option>
+                <option value="notions">Notions</option>
+            </select><br>
+            <div class="divdeux"><label for="sql">SQL:</label></div><input class="checkbox" type="checkbox" name="sql">
+            <select name="niveau">
+                <option value="excellent">Excellent</option>
+                <option value="bon">Bon</option>
+                <option value="moyen">Moyen</option>
+                <option value="notions">Notions</option>
+            </select>
+        </fieldset>
+    </form></div>
+    <!-- FORMULAIRE NUMERO 2-->
+<div style="clear:both"></div>
+    <!-- LES DEUX BOUTONS DE VALIDATION-->
+    <div class="trezeguet"><input type="reset" value="Annuler">
+    <input type="submit" value="Valider"></div>
+</body>
+
+</html>

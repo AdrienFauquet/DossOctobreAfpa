@@ -1,0 +1,23 @@
+.box{
+    background-color:gray;
+    width:290px;
+    height:190px;
+    border-top:10px solid red;
+    float: left;
+}
+.elem1{
+    margin-top:50px;
+    margin-left:60px;
+    border-right:10px solid green;
+}
+.elem2{
+    margin-top:130px;
+    border-right:10px solid blue;
+}
+.elem3{
+    margin-top:210px;
+    border-right:10px solid orange;
+}
+
+
+

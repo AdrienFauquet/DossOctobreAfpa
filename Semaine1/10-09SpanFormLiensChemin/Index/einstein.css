@@ -1,0 +1,17 @@
+body{
+    background-image: url(../../tes0810-DébutCSS/einstein-png-17.png); 
+}
+.oui{
+    width : 700px;
+    opacity: 0.5;
+}
+.singe{
+    width:100%;
+    height:auto;
+}
+.amp{
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+    width: 100px;
+}

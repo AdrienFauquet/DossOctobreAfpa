@@ -1,0 +1,77 @@
+#parent{
+    text-align:center;
+}
+.myimg, .myimg2{
+    width:400px;
+    height:300px;
+    padding:10px;
+    transition:all 1s;
+}
+.myimg:hover{
+    transform: scale(1.1) rotate(25deg);
+}
+.myimg2:hover{
+    transform: scale(1.1) rotate(-25deg);
+}
+h1{
+    font-size:50px;
+}
+
+#tard{
+    position:relative;
+    height:150px;
+}
+
+.to{
+    position:relative;
+    background-color:rgb(233, 29, 29);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    width:20px;
+    height:10px;
+    float:left;
+    animation: mvt 2s infinite;
+}
+@keyframes mvt{
+    0%{height: 70px;}
+    10%{height: 40px;}
+    20%{height: 100px; width:150px;}
+    30%{height: 20px;}
+    40%{height: 90px;}
+    50%{height: 50px;}
+    60%{height: 110px;}
+    70%{height: 20px;}
+    80%{height: 140px;}
+    90%{height: 10px;}
+    100%{height: 50px;}
+}
+.to1{animation-delay:0.2s;}
+.to2{animation-delay:0.4s;}
+.to3{animation-delay:0.6s;}
+.to4{animation-delay:0.8s;}
+.to5{animation-delay:1.0s;}
+
+#vert{
+    clear:both;
+    height:150px;
+}
+#vert:hover{
+    background-image:url(../../imagesOctobre/gandalf.gif);
+}
+
+#poisson{
+    width:800px;
+    height:1200px;
+    position:relative;
+    animation:fish 1s infinite linear;
+}
+@keyframes fish{
+    0%{top:500px; left:500px;}
+    100%{top:0px; left:0px;}
+}
+#image{
+    background:url(../../imagesOctobre/homer.jpg);
+}
+#image:hover{
+    background: url(../../imagesOctobre/homer.gif);
+}

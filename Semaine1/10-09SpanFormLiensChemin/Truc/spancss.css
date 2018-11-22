@@ -1,0 +1,83 @@
+.oui{
+    position:relative;
+    background-color: gold;
+}
+
+.hid{
+    position:fixed;
+    opacity: 0.1;
+}
+Table{
+    background-color: lightsteelblue;
+    border:solid lightslategray;
+    border-collapse: collapse;
+    border-color: rgb(255, 0, 0);
+    width: 100%;
+    animation: mytable .5s 2;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+td,th{
+    border:solid rgb(74, 164, 255);
+    padding-top:0px;
+    border: none;
+    text-align: center;
+
+}
+
+@keyframes mytable{
+    0% {border-top: hidden;
+    border-right:visible;}
+    25% {border-bottom: hidden;
+        border-left:visible;}
+    50% {border-right:hidden;
+    border-top:visible ;}
+    75% {border-left:hidden;
+    border-bottom:visible;}
+    100% {border: visible;}
+}
+#bl , #br , #tr , #tl{
+    background-color: green;
+}
+#bl:hover , #br:hover , #tr:hover , #tl:hover {
+    background-color:rgb(89, 122, 89)
+}
+.rouge{
+    width:100%;
+    max-width: 500px;
+    text-align: center;
+}
+.rouge:hover{
+    cursor: pointer;
+    position: relative;
+    animation: myfirst .5s 2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+ @keyframes myfirst{
+    0%   {background: rgb(255, 255, 255); left: 0px; top: 0px;}
+    25%  {background: rgb(245, 245, 237); left: 0px; top: 0px;}
+    50%  {background: rgb(242, 242, 245); left: 0px; top: 0px;}
+    75%  {background: rgb(229, 235, 229); left: 0px; top: 0px;}
+    100% {background: rgb(255, 255, 255); left: 0px; top: 0px;}
+}
+
+table:hover{
+    background-color: lightsteelblue;
+}
+td:hover{
+    background-color: #c3d3e9;
+}
+
+#submit:hover , #reset:hover{
+    cursor:pointer;
+}
+
+form{
+    width: 50% auto;
+    text-align: center;
+}
+
+#gif:hover{
+    background-image: url(../Image/giphy.gif);
+}

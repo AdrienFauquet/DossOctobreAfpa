@@ -1,0 +1,106 @@
+html,*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(33, 228, 228);
+}
+header{
+    background-color: aqua;
+}
+#Menu{
+    background-color: rgb(221, 229, 236);
+    overflow: hidden;
+}
+#Menu>ul{
+    list-style-type: none;
+    display:flex;
+    border: red solid 1px;
+    height:50px;
+}
+/*Sans inline-block: le a ne prendra pas toute la place disponible dans le li*/
+#Menu a{
+    display:inline-block;
+    height:100%;
+}
+#Menu>ul li{
+    text-align: center;
+    width:150px;
+}
+#Menu>ul>li:hover {
+    background-color: aquamarine;
+}
+#Menu>ul>li>.masque{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display:none;
+    width:150px;
+}
+#Menu>ul>li:hover ul{
+    display: block;
+    position: absolute;
+}
+
+#Menu>ul>li>.masque>li{
+    background-color: beige;
+    margin-top:0px;
+    padding: 15px 0;
+}
+.masque{
+    border: black solid 1px;
+    margin-top:50px;
+}
+.anim{
+    margin: 0 auto;
+    display:none;
+    height:500px;
+    width:500px;
+    background-color:beige;
+    animation: animation 4s infinite;
+}
+@keyframes animation{
+    0%{transform: rotate(0deg) translate(25px) rotate(0deg);}
+    50%{transform: rotate(90deg) translatex(-500px) rotate(90deg);}
+    100%{transform: rotate(90deg) translate(500px) rotate(0deg);}
+}
+.snail img{
+    animation: snail 20s infinite linear;
+}
+.snail{
+    display:none;
+    height:700px;
+    background-image: url(../imagesOctobre/Floor_Spikes.png);
+    background-repeat:no-repeat;
+    background-position:bottom left;
+    background-size: 200px;
+}
+@keyframes snail{
+    0%{ transform: rotate(90deg) translateY(500px);}
+    1%{transform: translatey(500px) rotate(90deg);}
+    50%{transform:  rotate(90deg);}
+    80%{transform: rotate(180deg);}
+    90%{transform: translatey(500px) rotate(180deg);}
+    100%{transform: translatey(500px) rotate(180deg);}
+}
+ /*240*160*/
+
+.escargot{
+     height:1500px;
+ }
+.escargot>img{
+    position:absolute;
+    animation:escargot 10s infinite linear;
+}
+@keyframes escargot{
+    0%{transform: translatex(1000px) translatey(1200px);}
+    0%{transform: translatex(1000px) translatey(1200px);}
+    20%{transform:translateY(1200px);}
+    30%{transform:translateY(1200px) rotate(90deg);}
+    40%{transform: translate(0) rotate(90deg);}
+    50%{transform: translate(0) rotate(180deg);}
+    60%{transform:translatex(1000px) rotate(180deg);}
+    70%{transform:translatex(1000px) rotate(270deg);}
+    80%{transform:translatex(1000px) translateY(1200px) rotate(270deg);}
+    100%{transform:translatex(1000px) translateY(1200px) rotate(360deg);}
+}

@@ -1,0 +1,55 @@
+.flexbox{
+    display:flex;
+    justify-content: space-between;
+    width:auto;
+    height:100px;
+    background-color:blue;
+}
+.fl1{
+    flex-flow: row wrap;
+}
+div{
+    box-sizing: border-box;
+    background-color:lightblue;
+    height:50px;
+    width:25%;
+    border:black solid 1px;
+    flex:auto;
+}
+.fl1>div{
+    margin:0;
+}
+.fl2 div{
+    flex-wrap: wrap;
+}
+#dude{
+    align-self:flex-end ;
+}
+.fl3 div{
+    width:50px;
+    height:20px;
+}
+#un{
+    order:1;
+    align-self: flex-end;
+}
+#deux{
+    order:3;
+}
+#trois{
+    order:4;
+    align-self: flex-end;
+}
+#quatre{
+    order:5;
+}
+#cinq{
+    order:2;
+    align-self: flex-end;
+    flex:auto;
+    animation:anime 1s linear alternate-reverse infinite;
+}
+@keyframes anime{
+    0%{transform:translateX(100%) translateY(50px) rotate(180deg);width:50px;height: 5px;background-color: aliceblue;}
+    100%{}
+}

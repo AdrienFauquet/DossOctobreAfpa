@@ -1,0 +1,19 @@
+h1{
+    background-color: lightgray;
+    color:white;
+}
+#para1{
+    background-color:grey;
+    color:yellow;
+    text-align:right;
+}
+#para2{
+    text-align:left;
+    background-color:lightblue;
+    color:red
+}
+#para3{
+    text-align:center;
+    background-color:black;
+    color:lightgray;
+}

@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#parent{
+    background-color:green;
+    height:50px;
+}
+.fille{
+    display:inline-block; 
+    background-color:yellow;
+    width:50%;
+    box-sizing: border-box;
+    border: black solid 1px;
+}
+.pos{
+    background-color: red;
+    position:relative;
+    /*Si position:relative n'est pas définie, .dans sera placé  en fonction du body*/
+    margin: 300px;
+    width: 400px;
+    height: 400px;
+}
+
+.dans{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}

@@ -1,0 +1,153 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to bottom,  #00233A,#07526d);
+}
+.ensemble{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header{
+    background-color:rgb(36, 26, 82);
+    background-image: url(../30-10/banniere.jpg);
+    background-repeat: no-repeat;
+    color:beige;
+    text-shadow:1px 1px indianred;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-align:center;
+    padding: 50px 0;
+    width: 100%;
+}
+.header>h1{
+    margin-left: 5%;
+    font-size: 75px;
+    font-style: italic;
+}
+.menu{
+    width:150px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+li{
+    text-align: center;
+    width:100%;
+}
+li>a{
+    color:white;
+    text-decoration: none;
+    display:inline-block;
+    border-bottom:white solid 1px;
+    width:100%;
+    line-height: 50px;
+}
+li>a:hover{
+    background-color:rgb(2, 9, 51);
+    color:rgb(206, 216, 158);
+    border:gold solid 2px;
+}
+li>hr{
+    width:50%;
+}
+.pub{
+    width:20%;
+}
+.pub img{
+    width:100%;
+}
+.contenuhome, .contenuform, .contenulink, .contenucv{
+    color:beige;
+    margin: 15px 1%;
+    width: 63%;
+    min-height:700px;
+}
+
+.footer{
+    background-color:#04384b;
+    color:white;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+input[type=text]{
+    width:80%;
+    border-radius: 10px;
+    background-color:rgb(221, 210, 210);
+}
+.contenuform .div{
+    float:left;
+    width: 100px;
+    text-align:center;
+}
+fieldset{
+    border:rgb(62, 128, 62) solid 1px;
+    padding-bottom: 3px;
+}
+.contenulink>h2{
+    color:gold;
+    font-size:30px;
+    text-align:center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.contenulink a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color:rgb(240, 74, 74);
+    font-size:20px;
+    text-align:right;
+}
+.contenuhome h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:40px;
+    text-align:center;
+    text-decoration: underline;
+    text-decoration-color:red;
+}
+textarea{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+    height:150px;
+    background-color:rgb(221, 210, 210);
+}
+input[type=submit]{
+    margin-left: 45%;
+}
+legend{
+    color:gold;
+    margin-left: 50px;
+}
+.contenucv h2{
+    text-align: center;
+    font-size: 20px;
+    color: gold;
+    margin-bottom: 25px;
+}
+.contenucv p{
+    margin-left: 25px;
+}
+.contenucv h3{
+    text-align: center;
+    font-size: 20px;
+}
+.contenucv hr{
+    width:30%;
+    border-color:gold;
+}

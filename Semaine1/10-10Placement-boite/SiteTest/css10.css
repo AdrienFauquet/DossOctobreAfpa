@@ -1,0 +1,46 @@
+body{
+    background: url(../../tes0810-DébutCSS/einstein-png-17.png) no-repeat;
+    background-size: 200px;
+}
+#table1{
+    border-collapse: collapse;
+    width:90%;
+    margin-top:0px;
+    margin-left:150px;
+}
+.cell{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    color: whitesmoke; 
+    background: #111111;
+}
+th:hover{
+    background-color: #363535;
+}
+#table2{
+    border-collapse: collapse;
+    width: 150px;
+    margin-top:0px;
+}
+#td1, #td2, #td3, #td4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:20px;
+    margin-left:0px;
+    color:black;
+    background: rgb(108, 175, 218);
+}
+ #td2:hover, #td3:hover, #td4:hover{
+    background-color: lightblue;
+}
+form{
+    position:absolute;
+    top:127px;
+    left: 156px;
+    width:80%;
+    height:800px;
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+}

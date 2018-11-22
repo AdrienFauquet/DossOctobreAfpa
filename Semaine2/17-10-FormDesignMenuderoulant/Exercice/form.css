@@ -1,0 +1,30 @@
+
+fieldset{
+    border:black solid 2px
+}
+
+.vert3{
+    width:40%;
+    background-color:lightblue;
+    float:left;
+}
+
+.englobement{
+    width:40%;
+
+    float:left;
+}
+.div{
+    float: left;
+    width: 40%;
+}
+
+.divdeux{
+    float:left;
+    width:150px;
+}
+.trezeguet{
+    position:relative;
+    top:-100px;
+    left:50%;
+}

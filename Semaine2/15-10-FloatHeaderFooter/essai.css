@@ -1,0 +1,64 @@
+html, *{
+    margin:0px;
+}
+
+/*Le style internal est prioritaire sur l'externe, cette classe ne 
+s'affiche donc pas totalement, seul le background-color est pris en compte car non défini dans le html*/
+.oui{
+    padding: 5px;
+    width: 150px;
+    height: 10px;
+    border: red solid 2px;
+    overflow: auto;
+    background-color:greenyellow;
+    margin:0px;
+}
+header{
+    padding:50px 0px;
+    background-color:lightblue;
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:10px;
+    border-bottom:black solid 1px;
+}
+
+section{
+    width:230px;
+    height:700px;
+    float:left;
+    background-image: url(../../imagesOctobre/images.jpg)
+}
+ul{
+    list-style-type: none;
+}
+li{
+    text-align:center;
+    width:200px;
+    border-radius:15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: none;
+    -webkit-transition: width .3s, background-color .5s;
+    -moz-transition: width .3s, background-color .5s;
+    -o-transition:width .3s, background-color .5s;
+    transition: width .3s, background-color .5s;
+}
+li:hover{
+    width:230px;
+    background-color:grey;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+}
+aside{
+    text-align:center;
+}
+footer{
+    text-align:center;
+    background-color:lightblue;
+    padding:20px 0px;
+}
+.img{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width:210px;
+}

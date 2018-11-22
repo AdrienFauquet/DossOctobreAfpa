@@ -1,0 +1,55 @@
+#mvt{
+    background-color: red;
+    height:50px;
+    width:100px;
+    margin:0 auto;
+    text-align:center;
+    line-height: 50px;
+    animation: mvtMove 5s infinite;
+    margin-top: 300px;
+}
+@keyframes mvtMove{
+    0%{transform:rotate(-180deg) translatex(0px) rotate(-180deg);}
+    50%{transform:rotate(0deg) translateX(100px) rotate(0deg);}
+    100%{transform:rotate(180deg) translatex(0px) rotate(180deg);}
+}
+#div{
+    width:1px;
+	height:1px;
+	border:1px solid #069;
+	border-color:transparent transparent #069 transparent;
+	border-width:100px;
+}
+.list{
+    background-color: black;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    list-style-type: none;
+    color:white;
+}
+li{
+    width: 150px;
+    line-height: 75px;
+    text-align: center;
+}
+li:hover{
+    color:gold;
+    background-color:rgb(6, 6, 46);
+}
+li>ul{
+    width:150px;
+    display:none;
+    position:absolute;
+}
+li:hover>ul{
+    display: block;
+    float: left;
+}
+.list>ul>li>ul>li{
+    background-color: gold;
+    color: black;
+    width: 100%;
+}

@@ -1,0 +1,66 @@
+html, *{
+    margin:0; padding:0;
+}
+div{
+    width:50%;
+}
+
+.un{
+    background-color:black;
+    color:white;
+}
+.deux{
+    background-color:grey;
+    float:left;
+}
+.trois{
+    background-color:green;
+    float:left;
+}
+.quatre{
+    background-color:yellow;
+}
+oui{
+    position
+}
+header{
+    padding:25px;
+    text-align:center;
+    background-color:lightskyblue;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+.numero10 {
+    width:100%;
+    height:25px;
+    border:black solid 2px;
+    background-color:lightgreen;
+}
+.numero10 ul{
+    margin:0px;
+    list-style-type: none;
+}
+.numero10 li{
+    display:inline-block;
+    width:350px;
+    margin:0px;
+    padding:3px;
+    text-align:center;
+}
+.numero10 ul li{
+    width:300px;
+}
+.numero10 ul li ul{
+    display:none;
+}
+.numero10 ul li:hover ul{
+    display:inline;
+
+}
+.numero10 li:hover ul li{
+    background-color:lightgreen;
+    float:right;
+    padding:0px;
+    text-align:center;
+}
+

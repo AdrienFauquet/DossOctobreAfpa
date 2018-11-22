@@ -1,0 +1,33 @@
+body {
+    margin:0;
+    padding:0;
+}
+#form{
+    width:250px;
+}
+
+.label{
+    margin:auto;
+    float:left;
+    width:80px;
+}
+footer{
+    background-color:red;
+    height:150px;
+}
+#menu{
+    overflow:hidden;
+    background-color:yellow;
+}
+a{
+    display:block;
+    float:left;
+    padding:14px 16px;
+    text-decoration:none;
+    color:black;
+    transition: 1s border;
+}
+a:hover{
+    background-color:gold;
+    border: orange solid 1px;
+}

@@ -1,0 +1,77 @@
+h1{
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    display:none;
+}
+nav{height: 800px;
+    width: 100%;
+    display:flex;
+    align-items:center;
+}
+nav>ul{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: row-reverse;
+    width:100%;
+    list-style-type:none;
+    background:grey;
+    border:red solid 1px;
+}
+
+.bloc{
+    height:300px;
+    width:30px;
+    float:left;
+}
+.un, .deux, .trois, .quatre, .cinq, .six, .sept, .huit, .neuf{
+    background-color:red;
+    border:purple solid 1px;
+    height:30px;
+    width:30px;
+    animation: animation .8s alternate-reverse infinite;
+}
+@keyframes animation{
+    0% {background-color:red;width: 50px; transform: translate(50px)}
+    25%{background-color:rgb(151, 67, 230);width:50px; transform: translate(30px)}
+    50%{background-color:purple;width: 20px; transform: translate(0px)}
+    75%{background-color:rgb(221, 131, 221);width: 30px; transform: translate(50px)}
+    100%{background-color:white;width: 0; transform: translate(100px)}
+}
+.un{animation-delay:0.2s;}
+.deux{animation-delay:0.4s;}
+.trois{animation-delay:0.6s;}
+.quatre{animation-delay:0.8s;}
+.cinq{animation-delay:1.0s;}
+.six{animation-delay:1.2s;}
+.sept{animation-delay:1.4s;}
+.huit{animation-delay:1.6s;}
+.neuf{animation-delay:1.8s;}
+
+
+#vague{
+    clear:both;
+    background-color:pink;
+    height:150px;
+}
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9{
+    float:left;
+    height:15px;
+    width:40px;
+    background-color:blue;
+    animation: myWave .8s alternate-reverse infinite;
+}
+@keyframes myWave{
+    0%{transform:translateY(50px);border-radius:20px;}
+    100%{transform: translateY(0px);border-radius:0px;}
+}
+.col1{animation-delay:0.2s}
+.col2{animation-delay:0.4s}
+.col3{animation-delay:0.6s}
+.col4{animation-delay:0.8s}
+.col5{animation-delay:1.0s}
+.col6{animation-delay:1.2s}
+.col7{animation-delay:1.4s}
+.col8{animation-delay:1.6s}
+.col9{animation-delay:1.8s}
